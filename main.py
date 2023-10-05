@@ -1,9 +1,10 @@
 import requests
 from datetime import datetime
+import os
 
 pixela_endpoint = "https://pixe.la/v1/users"
 USERNAME="rashad98"
-TOKEN="ksduhfu7ty87t347"
+TOKEN= os.environ.get("HABIT_TOKEN")
 ID = "graph1"
 
 today = datetime.now()
